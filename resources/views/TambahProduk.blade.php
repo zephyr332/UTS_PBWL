@@ -54,7 +54,7 @@
 
   <!-- Konten Form -->
   <div class="container mt-4">
-    <form action="{{ url('/produk/simpan') }}" method="POST">
+          <a class="nav-link" href="simpan">Simpan</a>
       @csrf
       <div class="row mb-3">
         <div class="col-md-4">
@@ -69,6 +69,9 @@
           <label class="form-label fw-semibold">Jenis Produk</label>
           <select name="jenis_produk" class="form-select" required>
             <option value="">Pilih Produk</option>
+            @for ($i = 0; $i < count($jenisProduk); $i++)
+              <option value="{{ $jenisProduk[$i] }}">{{ $jenisProduk[$i] }}</option>
+            @endfor
           </select>
         </div>
       </div>
