@@ -49,7 +49,7 @@
   <div class="container mt-5 pt-4">
     <div class="d-flex justify-content-between align-items-center mb-3">
       <h2 class="fw-bold">Halaman Produk</h2>
-      <a href="tambah_produk.html" class="btn btn-primary">Tambah Produk</a>
+      <a href="TambahProduk" class="btn btn-primary">Tambah Produk</a>
     </div>
 
     <!-- Tabel Produk -->
